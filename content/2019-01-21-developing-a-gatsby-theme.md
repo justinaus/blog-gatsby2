@@ -5,8 +5,7 @@ thumbnail: '../thumbnails/wp.png'
 cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
 slug: developing-a-gatsby-theme
 categories: 
-    - Nodejs
-    - Creative Thinking
+    - Tech
 tags:
   - tag one
   - gatsby
