@@ -12,7 +12,8 @@ const SEO = ({ postNode, postPath, postSEO }) => {
     const postMeta = postNode.frontmatter
     ;({ title } = postMeta)
     description = postMeta.description ? postMeta.description : postNode.excerpt
-    image = postMeta.cover
+    // cover 없는 경우.
+    image = postMeta.cover || config.siteLogo
     postURL = urljoin(config.siteUrl, config.pathPrefix, postPath)
   } else {
     title = config.siteTitle
