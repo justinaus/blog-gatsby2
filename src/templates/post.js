@@ -28,7 +28,8 @@ export default ({ data, pageContext }) => {
         <div>
           <h1>{post.title}</h1>
           <p className={styles.postMeta}>
-            {date} &mdash; {postNode.timeToRead} Min Read{' '}
+            {date} 
+            {/* &mdash; {postNode.timeToRead} Min Read{' '} */}
           </p>
           <div className={styles.postMeta}>
             <PostTags tags={post.tags} />
@@ -37,11 +38,11 @@ export default ({ data, pageContext }) => {
 
           <hr />
           <Bio config={config} />
-          <div className={styles.postMeta}>
+          {/* <div className={styles.postMeta}>
             <SocialLinks postPath={slug} postNode={postNode} />
-          </div>
+          </div> */}
         </div>
-        <nav>
+        {/* <nav>
           <ul className={styles.pagination}>
             <li>
               <Link to={prevslug} rel="prev">
@@ -54,7 +55,7 @@ export default ({ data, pageContext }) => {
               </Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </main>
     </Layout>
   )

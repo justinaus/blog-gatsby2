@@ -9,11 +9,20 @@ const Bio = ({ config, expanded }) => (
       src={config.userAvatar}
       alt={config.userName}
     />
-    <p>
-      Written by <strong>{config.userName}</strong> who lives and works in San
+    <p className={styles.avatarText}>
+      Written by <strong>{config.userName}</strong> 
+      <a
+        className={styles.githubLink}
+        href={`https://github.com/${config.userGitHub}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {`github.com/${config.userGitHub}`}
+      </a>
+      {/* who lives and works in San
       Francisco building useful things.
       {` `}
-      {/* <Follow
+      <Follow
         username={config.userTwitter}
         options={{ count: expanded ? true : 'none' }}
       /> */}

@@ -6,19 +6,24 @@ const Footer = () => (
   <footer>
     <div className={styles.container}>
       <div>
-        <a
+        {/* <a
           href={`https://twitter.com/${config.userTwitter}`}
           target="_blank"
           rel="noopener noreferrer"
         >
           Twitter
-        </a>
+        </a> */}
         <a
           href={`https://github.com/${config.userGitHub}`}
           target="_blank"
           rel="noopener noreferrer"
         >
           GitHub
+        </a>
+        <a
+          href={`mailto:${config.userEmail}`}
+        >
+          Mail
         </a>
         <a
           href={config.siteUrl + config.siteRss}
