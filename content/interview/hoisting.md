@@ -1,12 +1,9 @@
 ---
-date: 2020-10-08
-title: "호이스팅, 클로저"
+date: 2020-10-09
+title: "호이스팅"
 cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
 categories: 
-    - 단골 이론
-tags:
-    - hoisting
-    - closure
+    - 기출문제
 ---
 
 ## 호이스팅에 대해서 설명하세요
@@ -31,8 +28,9 @@ x = 1; // 초기화
 ```
 
 
-### 그 외 호이스팅 이론들
+### 그 외 내용들
 
 #### 호이스팅 우선 순위
 
 변수가 함수보다 위로 끌어올려진다.
+
