@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../layout'
@@ -18,6 +18,19 @@ export default ({ data, pageContext }) => {
   if (!post.id) {
     post.id = slug
   }
+
+  useEffect(() => {
+    let script = document.createElement("script");
+    let anchor = document.getElementById("inject-comments-for-uterances");
+    script.setAttribute("src", "https://utteranc.es/client.js");
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async", true);
+    script.setAttribute("repo", "justinaus/blog-gatsby2");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute( "theme", "github-light");
+    anchor.appendChild(script);
+  }, []);
+
   return (
     <Layout>
       <main>
@@ -35,6 +48,8 @@ export default ({ data, pageContext }) => {
             <PostTags tags={post.tags} />
           </div>
           <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          
+          <div id="inject-comments-for-uterances"></div>
 
           <hr />
           <Bio config={config} />
