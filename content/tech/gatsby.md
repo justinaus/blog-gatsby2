@@ -1,5 +1,5 @@
 ---
-date: 2020-10-12
+date: 2020-10-20
 title: "Gatsby / Netlify / Utterances"
 categories: 
     - Tech
