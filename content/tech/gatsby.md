@@ -1,6 +1,6 @@
 ---
 date: 2020-10-12
-title: "Gatsby / Netlify"
+title: "Gatsby / Netlify / Utterances"
 categories: 
     - Tech
 ---
@@ -29,3 +29,38 @@ categories:
 웹사이트는 만들었으니 이제 접속 가능하게 배포한다.
 Netlify는 깃헙 푸시만 해도 빌드/배포 가능한 웹호스팅을 지원한다.
 [Netlify 공홈](https://www.netlify.com) 가서 깃헙 계정 연결하고 시키는대로 진행하면 deploy까지 완료이다.
+
+## Utterances
+
+댓글 기능을 추가한다.
+[Utterances](https://utteranc.es)를 사용한다.
+Githup issue search API를 이용하는 방식이다. 자세한 내용은 공홈 참고.
+
+### Troubleshooting
+
+Utterances 공홈에서 시키는 대로 React component 안에 script 태그를 추가하는 방식으로는 정상 작동하지 않았다.
+이유는 정확히 찾아보지 못했지만, 보안 이유인 것 같았다.
+
+
+[해결책](https://github.com/utterance/utterances/issues/161)
+```js
+componentDidMount () {
+    let script = document.createElement("script");
+    let anchor = document.getElementById("inject-comments-for-uterances");
+    script.setAttribute("src", "https://utteranc.es/client.js");
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async", true);
+    script.setAttribute("repo", "[ENTER REPO HERE]");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute( "theme", "github-light");
+    anchor.appendChild(script);
+}
+
+render() {
+    return (
+        <div id="inject-comments-for-uterances"></div>
+    );
+}
+```
+
+
