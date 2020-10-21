@@ -1,5 +1,5 @@
 ---
-date: 2020-10-20
+date: 2020-10-22
 title: "Gatsby / Netlify / Utterances"
 categories: 
     - Tech
@@ -62,5 +62,20 @@ render() {
     );
 }
 ```
+
+## 도메인 연결
+
+- 무료 도메인을 산다(?)
+    - [freenom](https://my.freenom.com/domains.php)을 이용한다.
+
+- 주문한 도메인을 Netlify 설정에서 연결.
+
+- Set Up Netlify DNS for your domain
+    - freenom 가서 주문 한 도메인에 netlify 네임서버 추가
+
+- https 인증
+
+- 끝
+
 
 
