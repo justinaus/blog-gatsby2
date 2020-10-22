@@ -66,7 +66,7 @@ render() {
 ## 도메인 연결
 
 - 무료 도메인을 산다(?)
-    - [freenom](https://my.freenom.com/domains.php)을 이용한다.
+    - [freenom](https://my.freenom.com/domains.php)을 이용했다.
 
 - 주문한 도메인을 Netlify 설정에서 연결.
 
