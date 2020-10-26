@@ -1,8 +1,9 @@
 ---
 date: 2020-10-20
-title: "ie11 strict mode 중복 속성 허용 안함"
+title: "ie11 strict mode"
 categories: 
     - Troubleshooting
+desc: "ie11 strict mode 중복 속성 허용 안함"
 ---
 
 ## 에러 만남
