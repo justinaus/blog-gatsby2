@@ -40,6 +40,7 @@ export default ({ data, pageContext }) => {
         <SEO postPath={slug} postNode={postNode} postSEO />
         <div>
           <h1>{post.title}</h1>
+          <h3>{post.desc}</h3>
           <p className={styles.postMeta}>
             {date} 
             {/* &mdash; {postNode.timeToRead} Min Read{' '} */}
@@ -89,6 +90,7 @@ export const pageQuery = graphql`
         date
         categories
         tags
+        desc
       }
       fields {
         slug
