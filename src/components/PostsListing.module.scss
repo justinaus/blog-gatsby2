@@ -1,6 +1,7 @@
 .article-list {
     display: grid;
-    grid-template-columns: 50% 50%;
+    // grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
 
     .article-box {
         margin-bottom: 30px;
