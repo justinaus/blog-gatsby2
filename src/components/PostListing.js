@@ -14,7 +14,8 @@ const PostListing = ({ postEdges }) => {
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
         excerpt: postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead
+        timeToRead: postEdge.node.timeToRead,
+        desc: postEdge.node.frontmatter.desc,
       })
     })
     return postList
@@ -33,6 +34,7 @@ const PostListing = ({ postEdges }) => {
                 {post.date} &mdash; <span>{post.categories.join(' / ')}</span>{' '}
                 {/* &mdash; {post.timeToRead} Min Read{' '} */}
               </div>
+              <p>{post.desc}</p>
               {/* <p>{post.excerpt}</p> */}
             </div>
           </article>
