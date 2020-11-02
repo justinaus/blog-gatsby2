@@ -1,8 +1,14 @@
 ---
 date: 2020-10-29
 title: "Cypress"
+# thumbnail: '../thumbnails/wp.png'
+cover: "https://unsplash.it/400/300/?random?BigTest"
 categories: 
     - Tech
+slug: "Cypress"
+tags:
+    - cypress
+    - e2e
 desc: "Cypress 적용 후기"
 ---
 

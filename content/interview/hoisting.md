@@ -1,9 +1,9 @@
 ---
 date: 2020-10-09
-title: "Hoisting"
+title: "호이스팅"
 categories: 
     - 기출문제
-desc: "호이스팅"
+slug: "Hoisting"
 ---
 
 ## 호이스팅에 대해서 설명하세요

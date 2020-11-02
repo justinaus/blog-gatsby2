@@ -1,9 +1,10 @@
 ---
 date: 2020-10-28
-title: "Modes and environment variables"
+title: "모드와 환경변수"
 categories: 
     - Tech
-desc: "모드와 환경변수"
+slug: "Modes and environment variables"
+desc: "Modes and environment variables"
 ---
 
 ## 모드

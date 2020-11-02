@@ -1,9 +1,10 @@
 ---
 date: 2020-10-27
-title: "Sharing code between projects"
+title: "여러 프로젝트에서 공통 코드 사용"
 categories: 
     - Tech
-desc: "여러 프로젝트에서 공통 코드 사용"
+desc: "Sharing code between projects"
+slug: "Sharing code between projects"
 ---
 
 ## 하고 싶은 것

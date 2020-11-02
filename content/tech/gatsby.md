@@ -3,6 +3,7 @@ date: 2020-10-22
 title: "Gatsby / Netlify / Utterances"
 categories: 
     - Tech
+slug: "Gatsby"
 ---
 
 ## Gatsby-cli
