@@ -3,7 +3,7 @@ date: 2020-12-22
 title: "이벤트 버블링, 캡쳐링, 위임"
 categories: 
     - 기출문제
-slug: "Event"
+slug: "Event Bubbling"
 ---
 
 ## 이벤트 단계
