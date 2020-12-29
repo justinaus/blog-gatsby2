@@ -41,7 +41,7 @@ function do_something() {
 ## 결론
 
 가독성과 유지보수를 위해 호이스팅이 일어나지 않도록 하자.
-let/const, 함수표현식을 쓰자. ([참고](https://justinaus.ml/var-let-const))
+let/const, 함수표현식을 쓰자. ([참고](/var-let-const))
 
 
 

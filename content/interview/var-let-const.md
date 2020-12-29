@@ -63,5 +63,5 @@ function do_something() {
 }
 ```
 
-let, const의 정의가 평가되기까지 초기화가 되지 않는다는 의미이지. [호이스팅](https://justinaus.ml/hoisting)이 되지않아 정의가 되지 않는다는 의미와는 다르다고 한다. ([임시적인 사각 지역과 오류](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/let#임시적인_사각_지역과_오류))
+let, const의 정의가 평가되기까지 초기화가 되지 않는다는 의미이지. [호이스팅](/hoisting)이 되지않아 정의가 되지 않는다는 의미와는 다르다고 한다. ([임시적인 사각 지역과 오류](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/let#임시적인_사각_지역과_오류))
 
