@@ -27,6 +27,8 @@ categories:
     ```zsh
     yarn add @vue/eslint-config-prettier eslint-plugin-prettier prettier -D
     ```
+    - @vue/eslint-config-prettier
+        - prettier와 충돌을 일으키는 ESLint 규칙들을 비활성화 시키는 config
 1. 프로젝트 루트 위치에 .vscode/settings.json 파일 추가
     - vscode 툴에서 글로벌하게 설정할 수도 있지만, 여러모로 코드 스타일 설정 파일이 프로젝트 내에 있는 게 맞는 것 같다.
     ```json
