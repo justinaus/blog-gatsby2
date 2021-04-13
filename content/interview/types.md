@@ -71,3 +71,26 @@ typeof c; // "string"
 
 
 [MDN 자바스크립트의 자료형](https://developer.mozilla.org/ko/docs/Web/JavaScript/Data_structures)
+
+## 기타
+
+### instanceof
+
+instanceof 연산자는 생성자의 prototype 속성이 객체의 프로토타입 체인 어딘가 존재하는지 판별합니다.
+
+```js
+var a = new Date();
+
+a instanceof Date; // true
+a instanceof Object; // true
+```
+
+```js
+function Car() {
+  
+}
+
+const auto = new Car();
+
+console.log(auto instanceof Car); // true
+```
